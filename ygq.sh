@@ -23,7 +23,7 @@ git config --global merge.tool meld
 #nginx
 apt-get install nginx
 #uwsgi
-apt-get install uwsgi
+apt-get install uwsgi uwsgi-plugin-python
 #mongodb
 apt-get install mongodb
 #python包管理工具
@@ -47,6 +47,6 @@ pip install flask-mail
 #脚本管理
 pip install flask-script
 #mongodb数据库ORM
-flask-mongoengine
+pip install lask-mongoengine
 
 
