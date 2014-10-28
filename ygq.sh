@@ -6,7 +6,7 @@ apt-get -y install terminator
 #输入法
 apt-get -y install fcitx
 #虚拟机
-apt-get -y install virtualbox
+apt-get -y install virtualbox virtualbox-qt
 #图形化比较工具
 apt-get -y install meld
 
