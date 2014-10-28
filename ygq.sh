@@ -12,8 +12,8 @@ apt-get -y install meld
 
 #git配置#
 #git用户
-git config --global user.name 'ygq'
-git config --global user.email 'ygqmail@qq.com'
+#git config --global user.name 'ygq'
+#git config --global user.email 'ygqmail@qq.com'
 
 #git diff 使用meld比较文件
 git config --global diff.external ~/git-meld.sh
@@ -21,13 +21,13 @@ git config --global merge.tool meld
 
 #服务器环境#
 #nginx
-apt-get install nginx
+apt-get -y install nginx
 #uwsgi
-apt-get install uwsgi uwsgi-plugin-python
+apt-get -y install uwsgi uwsgi-plugin-python
 #mongodb
-apt-get install mongodb
+apt-get -y install mongodb
 #python包管理工具
-apt-get install python-pip
+apt-get -y install python-pip
 
 #数据库安装#
 #mongodb数据库
