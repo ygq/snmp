@@ -18,7 +18,7 @@ apt-get -y install meld
 #git diff 使用meld比较文件
 git config --global diff.external ~/git-meld.sh
 git config --global merge.tool meld
-
+git config --global diff.tool meld
 #服务器环境#
 #nginx
 apt-get -y install nginx

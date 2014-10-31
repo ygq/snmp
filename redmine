@@ -1,10 +1,18 @@
-
+#安装数据库
 sudo apt-get install mysql-server 
+#安装redmine
 sudo apt-get install redmine redmine-mysql
+#安装thin服务
 sudo apt-get install thin
-thin config -C /etc/thin/redmine.yml -c /opt/redmine/ --servers 2 -e production -a 127.0.0.1 -p 3000
-thin start -C redmine.yml
-
+#生成配置文件 
+sudo thin config -C /etc/thin2.0/redmine.yml -c /usr/share/redmine/ --servers 2 -e production -a 127.0.0.1 -p 3000
+#或者看是etc下面的具体目录
+sudo thin config -C /etc/thin/redmine.yml -c /usr/share/redmine/ --servers 2 -e production -a 127.0.0.1 -p 3000
+#重启thin如果打印出启动成功没有错误提示就OK了
+sudo thin start -C /etc/thin2.0/redmine.yml
+#安装nginx
+sudo apt-get install nginx
+#nginx配置
 server {
     listen       80;
     server_name  127.0.0.1;
